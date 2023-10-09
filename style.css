@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerp{
+    display: flex;
+    flex-direction: column;
+} 
+
+/* Header Navagation */
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    opacity: 0.7;
+}
+
+.navbar a img{
+    width: 80px;
+    margin-left: 50px;
+}
+
+.logo{
+   display: flex;
+   height: 90px;
+
+    
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #ffff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 903px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 15vh;
+        right: -15px;
+        width: 50vw;
+        height: 85vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+
+}
+
+.nav-list.active{
+    transform: translateX(0);
+
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    height: 15vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin-right: 15px;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* fim header */
+
+/* Introducao */
+
+.banner{
+    width: 100%;
+    height: 85vh;
+    background: url(img/paissagen01.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+.banner-title{
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 200px;
+    text-shadow: black 2px 2px 10px;
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-text{
+    text-transform: uppercase;
+    font-weight: bold;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Fim Banner */
+
+/* Programacao */
+.pr-text{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.pr-p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.p-card{
+    background-color: black;
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pr-button button{
+    display: block;
+    justify-content: center;
+}
+
+.butoons-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.butoons{
+    width: auto;
+    height: auto;
+}
+
+
