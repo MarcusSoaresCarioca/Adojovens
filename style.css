@@ -252,5 +252,54 @@ header{
 
 }
 
+/* Fim da programacao */
+
+/* oracao */
+
+.oracao{
+    margin-top: 400px;
+}
+
+.pr-text2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.pr-p2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.form{
+    margin: 50px auto;
+}
+
+.button{
+    font-size: 100px;
+}
+/* fim da oracao */
+
+/* Contato */
+
+.containerMap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    min-height: 50px;
+    margin: 30px;
+    border-radius: 30px;
+
+}
+
+.map{
+    width: 95%;
+    border-radius: 30px;
+}
+/* fim do contato */
+
 
 
