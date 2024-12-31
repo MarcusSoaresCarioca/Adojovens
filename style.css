@@ -7,18 +7,14 @@
 .containerp{
     display: flex;
     flex-direction: column;
+    border-radius: 0px;
 } 
-
-
-
-
-
 
 
 /* Header Navagation */
 
 header{
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: #000000;
 }
 
 @media (max-width: 991px) {
@@ -56,8 +52,8 @@ header{
 
 .banner{
     width: 100%;
-    height: 85vh;
-    background: url(img/ado.jpg) no-repeat center;
+    height: 91vh;
+    background: url(img/black\ banner.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
