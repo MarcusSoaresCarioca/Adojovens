@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +101,6 @@
         <!-- Vídeo de Fundo -->
         <video class="video-background" autoplay muted loop playsinline>
             <source src="img/telainicial.mp4" type="video/mp4">
-            <!-- Substitua o src acima pelo link do seu vídeo -->
         </video>
 
         <!-- Overlay escuro -->
@@ -267,49 +266,106 @@
 
     <!-- Fim do Programacao -->
 
-    <!-- Oracao -->
+      <!-- Leader -->
+     <section class="Leader">
+         <div class="container">
+            <div class="section-header">
+                <h2>Nossa Liderança</h2>
+                <p>Conheça os líderes que servem nossa comunidade</p>
+            </div>
 
-        <div class="oracao" id="ora">
-            <div class="containerp">
-                <h1 class="pr-text2">Oração</h1>
-                <p class="pr-p2">Faca seu pedido de oração aqui!</p>
+            <div class="leaders-grid">
+                <div class="leader-card">
+                    <img src="" alt="Pastor João Silva" class="leader-image">
+                    <div class="leader-info">
+                        <h3 class="leader-name">Pastor João Silva</h3>
+                        <p class="leader-role">Líder Principal</p>
+                    </div>
+                </div>
 
-                <div class="form">
-                        <div class="mb-3">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="name" class="col-sm-2 col-form-label">Nome</label>
-                                  <input type="text" class="form-control" aria-label="First name" id="name">
-                                </div>
-                                <div class="col">
-                                    <label for="sobrenome" class="col-sm-2 col-form-label">Sobrenome</label>
-                                  <input type="text" class="form-control"  aria-label="Last name" id="sobrenome">
-                                </div>
-                              </div>
-                        </div>
+                <div class="leader-card">
+                    <img src="" alt="Pastora Maria Santos" class="leader-image">
+                    <div class="leader-info">
+                        <h3 class="leader-name">Pastora Maria Santos</h3>
+                        <p class="leader-role">Líder de Louvor</p>
+                    </div>
+                </div>
 
-                        <div class="mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm">
-                                  <input type="email" class="form-control" id="inputEmail3">
-                                </div>
-                        </div>
-                      
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Pedido de Oracao</label>
-                            </div>
-                        </div>
+                <div class="leader-card">
+                    <img src="" alt="Diácono Carlos Souza" class="leader-image">
+                    <div class="leader-info">
+                        <h3 class="leader-name">Diácono Carlos Souza</h3>
+                        <p class="leader-role">Líder de Jovens</p>
+                    </div>
+                </div>
 
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                        </div>
+                <div class="leader-card">
+                    <img src="" alt="Ana Paula Costa" class="leader-image">
+                    <div class="leader-info">
+                        <h3 class="leader-name">Ana Paula Costa</h3>
+                        <p class="leader-role">Líder de Crianças</p>
+                    </div>
                 </div>
             </div>
         </div>
+     </section>
+    <!-- end leader -->
+
+    <!-- Oracao -->
+        <section class="prayer">
+         <div class="prayer-container">
+        <div class="prayer-icon">
+            <i class="fas fa-praying-hands"></i>
+        </div>
+        
+        <h1 class="prayer-title">Oração</h1>
+        <p class="prayer-subtitle">Faça seu pedido de oração aqui!</p>
+
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                    <div class="input-icon">
+                        <i class="fas fa-user-tag"></i>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="pedido" class="form-label">Pedido de Oração</label>
+                <div class="input-icon">
+                    <i class="fas fa-hands-praying" style="top: 20px;"></i>
+                    <textarea class="form-control" id="pedido" rows="4" placeholder="Compartilhe seu pedido de oração..." required></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+                <i class="fas fa-paper-plane me-2"></i>Enviar
+            </button>
+        </form>
+    </div>
+    </section>
 
     <!-- Fim Oracao -->
+
+  
 
     <!-- Contato -->
         <div class="containerMap">
